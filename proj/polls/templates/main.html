@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>  
+   
+</head>
+<body>
+    <h1><b>Привет,{{user.username}}!</b></h1>
+    {{test}}
+    {%for i in test%}
+    <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+          <h5 class="card-title">{{i.id}}</h5>
+          <a href="http://127.0.0.1:8000/auth/{{i.id}}" class="card-link">{{i.name}}</a>
+          <p class="card-title">{{i.author}}</p>
+          <p class="card-text">{{i.count_pages}}</p>
+          <p class="card-text">{{i.pub_date}}</p>
+        </div>
+    </div>
+    {%endfor %}
+   
+
+   
+</body>
+</html>
