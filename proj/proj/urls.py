@@ -22,4 +22,5 @@ urlpatterns = [
     path('register/',regUser),
     path('auth/',authUser),
     path('auth/<id>/',successPage )
+    jhhy
 ]
